@@ -8,4 +8,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(market_engine
     src/main.cpp
+    src/CsvParser.cpp
+    src/CsvWriter.cpp
 )
+
+target_include_directories(market_engine PRIVATE include)
